@@ -20,6 +20,12 @@
         .hero {
             background: url("https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_1920x1080.jpg") center;
         }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <!-- Body -->
@@ -60,25 +66,30 @@
             </div>
         </nav>
         <!-- Search -->
-        <div class="container" style="top: 164px;">
-            <div class="control has-icons-left">
-                <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
-                <span class="icon is-left">
-                    <i class="fas fa-headphones"></i>
-                </span>
+        <section class="container center">
+            <div class="columns">
+                <div class="column">
+                    <div class="control has-icons-left">
+                        <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
+                        <span class="icon is-left">
+                            <i class="fas fa-headphones"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="column">
+                    <p class="buttons">
+                        <a class="button is-rounded is-medium">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span>Search</span>
+                        </a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <!-- Button -->
-        <div class="container" style="top: -164px;">
-            <p class="buttons">
-                <a class="button is-rounded">
-                    <span class="icon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                    <span>Search</span>
-                </a>
-            </p>
-        </div>
+        </section>
     </section>
     <!-- Javascript Links -->
     <script src="../javaScript/app.js"></script>
