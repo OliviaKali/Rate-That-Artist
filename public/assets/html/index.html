@@ -1,90 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Rate That Artist!</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <link rel="stylesheet" href="/public/assets/css/home_style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="/public/assets/css/home_style.css" />
     <style>
-      .hero {
-        background: url("https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_1920x1080.jpg")
-          center;
-      }
+        .hero {
+            background: url("https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_1920x1080.jpg") center;
+        }
     </style>
-  </head>
-  <body>
-    <section class="hero is-fullheight">
-      <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="../html/index.html">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              alt="Bulma: a modern CSS framework based on Flexbox"
-              width="112"
-              height="28"
-            />
-          </a>
-          <div
-            class="navbar-burger burger"
-            data-target="navbarExampleTransparentExample"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+</head>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="../html/landing.html">
-                <i class="fas fa-headphones"></i>
-            </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a
-                class="navbar-link"
-                href="https://bulma.io/documentation/overview/start/"
-              >
-                More
-              </a>
-              <div class="navbar-dropdown is-boxed">
-                <a
-                  class="navbar-item"
-                  href="#"
-                >
-                  About
+<body>
+    <section class="hero is-fullheight">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../html/index.html">
+                    <p class="subtitle is-size-2">RocknRate</p>
                 </a>
-              </div>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-          </div>
+
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="navbar-item" href="../html/landing.html">
+                            <i class="fas fa-headphones"></i>
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                                More
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="#">
+                                    About
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="top: 164px;">
+            <div class="control has-icons-left">
+                <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
+                <span class="icon is-left">
+                    <i class="fas fa-headphones"></i>
+                </span>
+            </div>
         </div>
-      </nav>
-      <div class="container" style="top: 164px;">
-      <div class="control has-icons-left">
-      <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
-      <span class="icon is-left">
-          <i class="fas fa-headphones"></i>
-      </span>
-    </div>
-  </div>
-  <div class="container" style="top: -164px;">
-      <p class="buttons">
-          <a class="button is-rounded">
-            <span class="icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span>Search</span>
-          </a>
-          </p>
-  </div>
+        <div class="container" style="top: -164px;">
+            <p class="buttons">
+                <a class="button is-rounded">
+                    <span class="icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <span>Search</span>
+                </a>
+            </p>
+        </div>
     </section>
-  </body>
+</body>
+
 </html>
