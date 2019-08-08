@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
+<!-- Head -->
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
     <title>Rate That Artist!</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Bulma Style Sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <!-- FontAwesome Style Sheet -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="/public/assets/css/home_style.css" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/public/assets/css/landing_style.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Background IMG -->
     <style>
         .hero {
             background: url("https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_1920x1080.jpg") center;
         }
     </style>
 </head>
+<!-- Body -->
 
 <body>
+    <!-- Background/Section for the whole page -->
     <section class="hero is-fullheight">
+        <!-- NavBar -->
         <nav class="navbar is-transparent">
             <div class="navbar-brand">
                 <a class="navbar-item" href="../html/index.html">
@@ -29,9 +39,7 @@
                     <span></span>
                 </div>
             </div>
-
             <div id="navbarExampleTransparentExample" class="navbar-menu">
-
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <a class="navbar-item" href="../html/landing.html">
@@ -51,6 +59,7 @@
                 </div>
             </div>
         </nav>
+        <!-- Search -->
         <div class="container" style="top: 164px;">
             <div class="control has-icons-left">
                 <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
@@ -59,6 +68,7 @@
                 </span>
             </div>
         </div>
+        <!-- Button -->
         <div class="container" style="top: -164px;">
             <p class="buttons">
                 <a class="button is-rounded">
@@ -70,6 +80,8 @@
             </p>
         </div>
     </section>
+    <!-- Javascript Links -->
+    <script src="../javaScript/app.js"></script>
 </body>
 
 </html>
