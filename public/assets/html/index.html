@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- Head -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
+    <title>Rate That Artist!</title>
+    <!-- Bulma Style Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <!-- FontAwesome Style Sheet -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/public/assets/css/landing_style.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Background IMG -->
+    <style>
+        .hero {
+            background: url("https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_1920x1080.jpg") center;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+<!-- Body -->
+
 <body>
-    
+    <!-- Background/Section for the whole page -->
+    <section class="hero is-fullheight">
+        <!-- NavBar -->
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../html/index.html">
+                    <p class="subtitle is-size-2">RocknRate</p>
+                </a>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="navbar-item" href="../html/landing.html">
+                            <i class="fas fa-headphones"></i>
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                                More
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="#">
+                                    About
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Search -->
+        <section class="container center">
+            <div class="columns">
+                <div class="column">
+                    <div class="control has-icons-left">
+                        <input class="input is-info is-rounded is-medium" type="text" placeholder="Artist Name">
+                        <span class="icon is-left">
+                            <i class="fas fa-headphones"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="column">
+                    <p class="buttons">
+                        <a class="button is-rounded is-medium">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span>Search</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Javascript Links -->
+    <script src="../javaScript/app.js"></script>
 </body>
+
 </html>
