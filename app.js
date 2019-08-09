@@ -1,3 +1,13 @@
+$.ajax({
+  url: 'https://api.spotify.com/v1/search',
+  data: {
+      q: userInput,
+      type: 'artist'
+  },
+});
+
+
+
 require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require("node-spotify-api");
@@ -16,27 +26,33 @@ app.use(express.static("public"))
 //ajax post route to get what they say
 //json response to api 
 
-
+app.post("/api/artists", function(req, res) {
 function searchArtist() {
   var spotify = new Spotify(keys.spotify);
 
   spotify
-    .search({ type: "artist", query: "blink-182", limit: 3 })
+    .search({ type: "artist", query: req.body.artist, limit: 3 })
     .then(function(response) {
       var artistName = response.artists.items[0].name;
       var artistGenres = response.artists.items[0].genres;
       var imageUrl = response.artists.items[0].images[0].url;
       var artistID = response.artists.items[0].id;
 
-      console.log("Artist: " + artistName);
-      console.log("Genre: " + artistGenres);
-      console.log("imageUrl: " + imageUrl);
-      console.log("Artist ID #: " + artistID);
-      
+      var artist = {
+        name: artistName,
+        genres: artistGenres,
+        image: imageUrl,
+        id: artistID
+      }
+      res.json(artist);
     })
     .catch(function(err) {
       console.log(err);
     });
 }
-
 searchArtist();
+});
+
+app.listen(PORT, function() {
+  console.log("Server listening on: http://localhost:" + PORT);
+});
