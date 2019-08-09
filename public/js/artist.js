@@ -29,7 +29,7 @@ $(document).ready(function() {
   // A function for creating an author. Calls getAuthors upon completion
   function upsertArtist(artistData) {
     $.post("/api/artists", artistData)
-      .then(getArtist);
+      .then(getArtists);
   }
 
   // Function for creating a new list row for authors
@@ -53,6 +53,7 @@ $(document).ready(function() {
     $.get("/api/artists", function(data) {
       var rowsToAdd = [];
       for (var i = 0; i < data.length; i++) {
+        console.log(data[i]);
         rowsToAdd.push(createArtistRow(data[i]));
       }
       renderArtistList(rowsToAdd);
